@@ -2,7 +2,7 @@ def binary_search(arr: list[int], target: int) -> int:
     """
     Perform binary search on a sorted array to find the index of the target value.
 
-    :param arr: List[int] - A sorted list of integers.
+    :param arr: list[int] - A sorted list of integers.
     :param target: int - The integer value to search for.
     :return: int - The index of the target in the array, or -1 if not found.
     """
