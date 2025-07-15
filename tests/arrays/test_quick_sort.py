@@ -1,6 +1,6 @@
 import unittest
 
-from .context import quick_sort
+from src.arrays.quick_sort import quick_sort
 
 
 class TestQuickSort(unittest.TestCase):

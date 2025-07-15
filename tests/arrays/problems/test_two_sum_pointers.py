@@ -1,6 +1,7 @@
 import unittest
 
-from .context import two_sum_pointers
+# from .context import two_sum_pointers
+from src.arrays.problems.two_sum_pointers import two_sum_pointers
 
 
 class TestTwoSumPointers(unittest.TestCase):
