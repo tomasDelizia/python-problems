@@ -23,6 +23,9 @@
     },
     "isort.args": ["--profile", "black"],
     "flake8.args": ["--show-source", "--exclude=**/context.py"],
+    "flake8.severity": {
+        "F841": "Warning",
+    },
     "python.testing.unittestArgs": [
         "-v",
         "-s",
