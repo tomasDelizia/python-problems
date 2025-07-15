@@ -1,7 +1,4 @@
-from typing import List
-
-
-def binary_search(arr: List[int], target: int) -> int:
+def binary_search(arr: list[int], target: int) -> int:
     """
     Perform binary search on a sorted array to find the index of the target value.
 
