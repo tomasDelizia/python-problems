@@ -1,6 +1,6 @@
 import unittest
 
-from context import shell_sort
+from .context import shell_sort
 
 
 class TestShellSort(unittest.TestCase):

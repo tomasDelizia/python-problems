@@ -1,6 +1,6 @@
 import unittest
 
-from context import insertion_sort
+from .context import insertion_sort
 
 
 class TestInsertionSort(unittest.TestCase):
