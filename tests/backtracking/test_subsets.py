@@ -3,7 +3,7 @@ import unittest
 from src.backtracking.subsets import subsets
 
 
-class TestBSubsets(unittest.TestCase):
+class TestSubsets(unittest.TestCase):
     def test_empty_array(self):
         self.assertEqual(subsets([]), [[]])
 
