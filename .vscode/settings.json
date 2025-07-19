@@ -25,6 +25,7 @@
     "flake8.args": ["--show-source", "--exclude=**/context.py"],
     "flake8.severity": {
         "F841": "Warning",
+        "E203": "Hint"
     },
     "python.testing.unittestArgs": [
         "-v",
