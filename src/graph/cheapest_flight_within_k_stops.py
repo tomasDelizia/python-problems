@@ -3,15 +3,27 @@ import math
 from collections import defaultdict
 
 
-# Bellman-Ford algorithm
-# TODO: implement
 def cheapest_flight_within_k_stops(
     n: int, flights: list[list[int]], src: int, dest: int, k: int
 ) -> float:
-    edges = defaultdict(list)
-    for u, v, w in flights:
-        edges[u].append((v, w))
-    return 0
+    # Bellman-Ford implementation
+
+    # Table that stores the min price to get to each node in k steps
+    prices = [float("inf")] * n
+    prices[src] = 0
+
+    for _ in range(k + 1):
+        temp = prices.copy()
+        for s, d, p in flights:  # s=source, d=destination, p=price
+            # If the source node is unreachable, skip it.
+            if prices[s] == float("inf"):
+                continue
+            # Update price to reach src
+            if prices[s] + p < temp[d]:
+                temp[d] = prices[s] + p
+        prices = temp
+
+    return prices[dest] if prices[dest] != float("inf") else -1
 
 
 def cheapest_flight_within_k_stops_bad(
